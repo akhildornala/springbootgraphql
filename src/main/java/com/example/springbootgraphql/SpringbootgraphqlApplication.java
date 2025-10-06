@@ -10,4 +10,5 @@ public class SpringbootgraphqlApplication {
 		SpringApplication.run(SpringbootgraphqlApplication.class, args);
 	}
 	
+
 }
