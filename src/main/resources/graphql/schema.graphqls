@@ -1,0 +1,10 @@
+type Query {
+    studentInfo(id: Int! @Size(max:1)): StudentDto
+}
+
+type StudentDto {
+  id: Int
+  name: String
+  email: String
+  age: Int
+}

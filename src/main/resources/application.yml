@@ -1,0 +1,20 @@
+server:
+  port: 8087
+
+
+spring:
+  application:
+    name: springbootgraaphql
+
+
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: test
+
+
+
+#logging:
+#  level:
+#    ROOT: ERROR
