@@ -16,7 +16,8 @@ public class StudentController {
     private StudentService service;
 
     @QueryMapping
-    public StudentDto studentInfo(@Argument Integer id) {
-        return service.getOneStudent(id);
+    public StudentDto studentInfo(@Argument String id) {
+        Integer id1 = Integer.valueOf(id);
+        return service.getOneStudent(id1);
     }
 }

@@ -10,7 +10,7 @@ description = 'Demo project for Spring Boot'
 
 java {
 	toolchain {
-		languageVersion = JavaLanguageVersion.of(23)
+		languageVersion = JavaLanguageVersion.of(25)
 	}
 }
 
@@ -24,8 +24,8 @@ dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-graphql'
 //	implementation 'org.springframework.graphql:spring-graphql:1.2.0'
 // https://mvnrepository.com/artifact/com.graphql-java/graphql-java-extended-validation
-	implementation 'com.graphql-java:graphql-java-extended-validation:24.0' // Use the version compatible with your graphql-java version
-
+//	implementation 'com.graphql-java:graphql-java-extended-validation:24.0' // Use the version compatible with your graphql-java version
+	implementation 'com.graphql-java:graphql-java-extended-validation:24.0'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	compileOnly("org.projectlombok:lombok:1.18.38")
 	annotationProcessor("org.projectlombok:lombok:1.18.38")

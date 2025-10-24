@@ -1,5 +1,17 @@
+directive @Size(
+    min: Int = 5
+    max: Int = 10
+) on FIELD_DEFINITION | ARGUMENT_DEFINITION | INPUT_FIELD_DEFINITION
+
+
 type Query {
-    studentInfo(id: Int! @Size(max:1)): StudentDto
+    studentInfo(id: String!
+        @Size(
+            min: 5
+            max: 10
+
+        )
+    ): StudentDto
 }
 
 type StudentDto {
