@@ -20,4 +20,5 @@ public class StudentController {
         Integer id1 = Integer.valueOf(id);
         return service.getOneStudent(id1);
     }
+
 }
