@@ -4,7 +4,12 @@ server:
 
 spring:
   application:
-    name: springbootgraaphql
+    name: springbootgraphql
+  graphql:
+    graphiql:
+      enabled: true
+    schema:
+      locations: classpath:graphql/**/
 
 
   data:
